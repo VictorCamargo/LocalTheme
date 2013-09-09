@@ -1,0 +1,1 @@
+<?php include'localtheme/index.php'; ?>

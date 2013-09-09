@@ -1,0 +1,71 @@
+// --------------------------------------------------
+// DEFAULT VERSION
+// --------------------------------------------------
+.auto{ margin-left: auto; margin-right: auto;}
+//SIZES
+.w (@w){width: @w;}
+.h (@h){height: @h;}
+.maxw (@maxw){max-width: @maxw;}
+.minw (@minw){min-width: @minw;}
+.maxh (@maxh){max-height: @maxh;}
+.minh (@minh){min-height: @minh;}
+//POSITIONS
+.lt (@l, @t){left: @l; top: @t;}
+.rt (@r, @t){right: @r; top: @t;}
+.lb (@l, @b){left: @l; bottom: @b;}
+.rb (@r, @b){right: @r; bottom: @b;}
+.t (@t){top:@t;}
+.l (@l){left:@l;}
+.b (@b){bottom:@b;}
+.r (@r){right:@r;}
+.right{float:right;}
+.left{float:left;}
+.absolute{position:absolute;}
+.relative{position:relative;}
+//TEXT
+.p (@p){padding: @p;}
+.m (@m){margin: @m;}
+.c (@c){color:@c;}
+.t-center{text-align:center;}
+.t-right{text-align:right;}
+.t-left{text-align:left;}
+.t-justify{text-align:justify;}
+.f (@f){font-size:@f;}
+.af {font-family: @altFontFamily;}
+.fw (@fw){font-weight:@fw;}
+.lh (@lh){line-height:@lh;}
+.normal{font-weight: normal;}
+.uppercase{text-transform: uppercase;}
+//BACKGROUNDS
+.bkg (@color, @bgct, @position) {background: @color url("@{path}@{bgct}") @position;}
+.bkgc (@color){background-color:@color;}
+.transparent{background:transparent;}
+//OTHERS
+.pointer{cursor:pointer;}
+.block{display:block;}
+.inline{display:inline;}
+.inlineb{display:inline-block;}
+.hidden{overflow:hidden;}
+.none{text-decoration: none;}
+.clear{clear:both;}
+// BOOTSTRAP DEFAULT
+.hide {display: none;}
+.show {display: block;}
+.invisible {visibility: hidden;}
+.affix {position: fixed;}
+
+// --------------------------------------------------
+// USER VERSION
+// --------------------------------------------------
+
+// CREATED BY RICHARD
+.reset{margin: 0;padding: 0; line-height: 20px;}
+.flw (@f, @l, @w){font-size:@f; line-height:@l; font-weight: @w;}
+.flwc (@f, @l, @w, @c){font-size:@f; line-height:@l; font-weight: @w; color:@c;}
+.serif{font-family: @serifFontFamily;}
+.altFont{font-family: @altFontFamily;}
+// CREATED BY VICTOR
+.semi{font-weight: 600;}
+.light{font-weight: 300;}
+.bold{font-weight: 700;}
+.bolder{font-weight: 900;}
