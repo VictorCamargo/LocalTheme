@@ -1,4 +1,4 @@
-Easy Localhost v1.0.0
+Easy Localhost v2.0.0
 ==============
 
 A beautiful and useful theme for localhost.
