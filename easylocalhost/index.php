@@ -26,10 +26,9 @@ ob_start("ob_html_compress");
 	<meta http-equiv="cleartype" content="on">
 
 	<!-- CSS-->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="<?= $dir ?>css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?= $dir ?>css/bootstrap.css">
 	<link rel="shortcut icon" href="<?= $dir ?>favicon.ico">
-
+	
 	<script src="<?= $dir ?>js/modernizr-2.6.2-min.js"></script>
 
 </head>
@@ -38,15 +37,15 @@ ob_start("ob_html_compress");
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<img class="logo" src="<?= $dir ?>img/logo.png">
+					<img class="logo img-responsive" src="<?= $dir ?>img/logo.png">
 				</div>
-				<div class="col-sm-5">
+				<div class="col-sm-4 col-md-5">
 					<div class="search">
 						<input type="text" id="search" placeholder="Search">
 						<br><p>Total projects: <span class="total"></span></p>
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-5 col-md-4">
 					<div class="buttons">
 						<button type="button" class="orderByName">ORDER BY <strong>NAME</strong></button>
 						<button type="button" class="orderByDate active">ORDER BY <strong>DATA</strong></button>
@@ -68,10 +67,10 @@ ob_start("ob_html_compress");
 							SORT_NUMERIC,
 							SORT_DESC,
 							$files
-						);
+							);
 					}
 					$i = -1;
-					foreach($files as $file){
+					foreach ($files as $file) {
 						if (!in_array($file, $exclude_files)) {
 							echo '<a href='.$file.' rel='.$i.' >'.'<p>'.utf8_encode($file).'</p>';
 							if (file_exists($file)) {
@@ -87,7 +86,7 @@ ob_start("ob_html_compress");
 				<div class="development">
 					Copyright © 2013 <a href="http://www.victorcamargo.com.br" target="_blank">Victor Camargo</a>. All rights reserved. 
 					<a href="https://github.com/VictorCamargo/Easy-Localhost" target="_blank">GitHub</a> Project.<br>
-					Easy Localhost v1.0.1
+					Easy Localhost v2.0.0
 				</div>
 			</div>
 		</div>
