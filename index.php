@@ -1,1 +1,1 @@
-<?php include'easylocalhost/index.php'; ?>
+<?php include'localtheme/index.php'; ?>

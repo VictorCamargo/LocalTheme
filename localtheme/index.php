@@ -1,4 +1,4 @@
-<?php $dir = 'easylocalhost/'; ?>
+<?php $dir = 'localtheme/'; ?>
 <?php
 function ob_html_compress($buf){
 	return str_replace(array("\n","\r","\t"),'',$buf);
@@ -13,7 +13,7 @@ ob_start("ob_html_compress");
 	<title>Easy Localhost</title>
 	<meta name="description" content="A beautiful and useful theme for localhost.">
 	<meta name="author" content="Victor Camargo - contato@victorcamargo.com.br">
-	<meta name="keywords" content="Easy Localhost, easylocalhost">
+	<meta name="keywords" content="LocalTheme">
 	<meta name="language" content="pt-br">
 	<meta name="revisit-after" content="1 days">
 	<meta name="document-classification" content="Internet Services">
@@ -27,7 +27,7 @@ ob_start("ob_html_compress");
 
 	<!-- CSS-->
 	<link rel="stylesheet" href="<?= $dir ?>css/bootstrap.css">
-	<link rel="shortcut icon" href="<?= $dir ?>favicon.ico">
+	<link rel="shortcut icon" href="<?= $dir ?>img/favicon.ico">
 	
 	<script src="<?= $dir ?>js/modernizr-2.6.2-min.js"></script>
 
@@ -37,7 +37,7 @@ ob_start("ob_html_compress");
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<img class="logo img-responsive" src="<?= $dir ?>img/logo.png">
+					<div class="logo"><span>L</span>ocal<span>T</span>heme</div>
 				</div>
 				<div class="col-sm-4 col-md-5">
 					<div class="search">
@@ -47,8 +47,10 @@ ob_start("ob_html_compress");
 				</div>
 				<div class="col-sm-5 col-md-4">
 					<div class="buttons">
-						<button type="button" class="orderByName">ORDER BY <strong>NAME</strong></button>
-						<button type="button" class="orderByDate active">ORDER BY <strong>DATA</strong></button>
+						<span>ODER BY: </span>
+						<button type="button" class="orderByName">NAME</button>
+						<button type="button" class="orderByDate active">DATA</button>
+						<a href="/phpmyadmin" target="_blank" class="phpMyAdmin">phpMyAdmin</a>
 					</div>
 				</div>
 			</div>
@@ -60,7 +62,7 @@ ob_start("ob_html_compress");
 				<nav>
 					<?php
 					$files = glob( '*' );
-					$exclude_files = array('.', '..', 'index.php', 'easylocalhost');
+					$exclude_files = array('.', '..', 'index.php', 'localtheme');
 					if (!in_array($files, $exclude_files)) {
 						array_multisort(
 							array_map( 'filemtime', $files ),
@@ -86,13 +88,13 @@ ob_start("ob_html_compress");
 				<div class="development">
 					Copyright © 2013 <a href="http://www.victorcamargo.com.br" target="_blank">Victor Camargo</a>. All rights reserved. 
 					<a href="https://github.com/VictorCamargo/Easy-Localhost" target="_blank">GitHub</a> Project.<br>
-					Easy Localhost v2.0.0
+					Easy Localhost v2.1.0
 				</div>
 			</div>
 		</div>
 	</div>
 	<script src="<?= $dir ?>js/jquery-1.10.2.min.js"></script>
-	<script src="<?= $dir ?>js/script.min.js"></script>
+	<script src="<?= $dir ?>js/script.js"></script>
 	<script src="<?= $dir ?>js/plugins/fastlivefilter/jquery.fastLiveFilter.js"></script>
 </body>
 </html>

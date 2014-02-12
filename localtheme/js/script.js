@@ -22,13 +22,10 @@ $('.orderByName').on('click', function(){
 
 $('.orderByDate').on('click', function(){
 	if(!$(this).hasClass('active') ){
-
 		$total = $('nav a').length;
 		for( $i = 0; $i <= $total; $i++ ){
-			console.log('teste');
 			$('nav a[rel='+$i+']').appendTo($('nav'));
 		}
-
 		$('.orderByName').removeClass('active');
 		$(this).addClass('active');
 		$('nav a').css({'color':'#8A8A8A'});

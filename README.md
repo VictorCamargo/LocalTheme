@@ -1,4 +1,4 @@
-Easy Localhost v2.0.0
+LocalTheme v2.1.0
 ==============
 
 A beautiful and useful theme for localhost.
@@ -6,7 +6,7 @@ A beautiful and useful theme for localhost.
 Instalation
 -----------
 
-- Place the <strong>easylocalhost</strong> folder and <strong>index.php</strong> file in your Apache directory.
+- Place the <strong>localtheme</strong> folder and <strong>index.php</strong> file in your Apache directory.
 If are you using WAMP "www" or "htdocs" for XAMPP.
 
 Features
@@ -18,3 +18,10 @@ Features
 - Shows how many projects you have
 - Can list by modification date
 - Can list by alphabetical order
+
+Recent Updates
+-------------------------------
+
+- New Design (Cleaner and lighter)
+- Shortcut to phpMyAdmin
+- Improved performance
