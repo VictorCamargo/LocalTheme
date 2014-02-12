@@ -1,4 +1,4 @@
-LocalTheme v2.1.0
+LocalTheme v2.1.1
 ==============
 
 A beautiful and useful theme for localhost.
