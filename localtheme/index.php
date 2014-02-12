@@ -10,7 +10,7 @@ ob_start("ob_html_compress");
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-	<title>Easy Localhost</title>
+	<title>LocalTheme</title>
 	<meta name="description" content="A beautiful and useful theme for localhost.">
 	<meta name="author" content="Victor Camargo - contato@victorcamargo.com.br">
 	<meta name="keywords" content="LocalTheme">
@@ -33,6 +33,7 @@ ob_start("ob_html_compress");
 
 </head>
 <body>
+<a href="https://github.com/VictorCamargo/LocalTheme"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
 	<header>
 		<div class="container">
 			<div class="row">
@@ -87,7 +88,7 @@ ob_start("ob_html_compress");
 				<div class="line"></div>
 				<div class="development">
 					Copyright © 2013 <a href="http://www.victorcamargo.com.br" target="_blank">Victor Camargo</a>. All rights reserved. 
-					<a href="https://github.com/VictorCamargo/Easy-Localhost" target="_blank">GitHub</a> Project.<br>
+					<a href="https://github.com/VictorCamargo/LocalTheme" target="_blank">GitHub</a> Project.<br>
 					Easy Localhost v2.1.0
 				</div>
 			</div>
