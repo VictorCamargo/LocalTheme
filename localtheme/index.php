@@ -89,7 +89,7 @@ ob_start("ob_html_compress");
 				<div class="development">
 					Copyright © 2013 <a href="http://www.victorcamargo.com.br" target="_blank">Victor Camargo</a>. All rights reserved. 
 					<a href="https://github.com/VictorCamargo/LocalTheme" target="_blank">GitHub</a> Project.<br>
-					Easy Localhost v2.1.0
+					Easy Localhost v2.1.1
 				</div>
 			</div>
 		</div>
