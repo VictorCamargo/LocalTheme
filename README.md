@@ -3,6 +3,11 @@ LocalTheme v2.1.1
 
 A beautiful and useful theme for localhost.
 
+Preview
+-----------
+
+![LocalTheme](http://www.victorcamargo.com.br/localtheme/localtheme-example.jpg)
+
 Instalation
 -----------
 
