@@ -32,12 +32,12 @@ ob_start("ob_html_compress");
 	<!-- CSS-->
 	<link rel="stylesheet" href="<?= $dir ?>css/bootstrap.css">
 	<link rel="shortcut icon" href="<?= $dir ?>img/favicon.ico">
-	
+
 	<script src="<?= $dir ?>js/modernizr-2.6.2-min.js"></script>
 
 </head>
 <body>
-<a href="https://github.com/VictorCamargo/LocalTheme"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
+	<a href="https://github.com/VictorCamargo/LocalTheme"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
 	<header>
 		<div class="container">
 			<div class="row">
@@ -67,7 +67,7 @@ ob_start("ob_html_compress");
 				<nav>
 					<?php
 					$files = glob( '*' );
-					$exclude_files = array('.', '..', 'index.php', 'localtheme');
+					$exclude_files = array('.', '..', 'index.php', 'localtheme', 'README.md');
 					if (!in_array($files, $exclude_files)) {
 						array_multisort(
 							array_map( 'filemtime', $files ),
@@ -91,7 +91,7 @@ ob_start("ob_html_compress");
 				</nav>
 				<div class="line"></div>
 				<div class="development">
-					Copyright © 2013 <a href="http://www.victorcamargo.com.br" target="_blank">Victor Camargo</a>. All rights reserved. 
+					Copyright © 2013 <a href="http://www.victorcamargo.com.br" target="_blank">Victor Camargo</a>. All rights reserved.
 					<a href="https://github.com/VictorCamargo/LocalTheme" target="_blank">GitHub</a> Project.<br>
 					Easy Localhost v2.1.1
 				</div>
