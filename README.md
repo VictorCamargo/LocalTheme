@@ -13,6 +13,7 @@ Instalation
 
 - Place the <strong>localtheme</strong> folder and <strong>index.php</strong> file in your Apache directory.
 If are you using WAMP "www" or "htdocs" for XAMPP.
+- Copy the file localtheme/config.php.dist to localtheme/config.php.
 
 Features
 -------------------------------
