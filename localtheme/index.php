@@ -1,4 +1,4 @@
-<?php include('config.php'); ?>
+<?php include('config.php.dist'); ?>
 <?php
 function ob_html_compress($buf){
 	return str_replace(array("\n","\r","\t"),'',$buf);
