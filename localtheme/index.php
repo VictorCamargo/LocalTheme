@@ -1,5 +1,4 @@
 <?php
-#echo __DIR__;die;
 if(is_file(__DIR__.'/config.php')){
 	include(__DIR__.'/config.php');
 }else{
