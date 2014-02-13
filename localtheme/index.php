@@ -1,5 +1,10 @@
-<?php include('config.php'); ?>
 <?php
+#echo __DIR__;die;
+if(is_file(__DIR__.'/config.php')){
+	include(__DIR__.'/config.php');
+}else{
+	$dir = 'localtheme/';
+}
 function ob_html_compress($buf){
 	return str_replace(array("\n","\r","\t"),'',$buf);
 }
