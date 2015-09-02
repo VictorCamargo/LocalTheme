@@ -83,9 +83,9 @@ $list = json_encode($list);
 					</nav>
 					<div class="line"></div>
 					<div class="development">
-						Copyright © 2013 <a href="https://github.com/victorcamargo" target="_blank">Victor Camargo</a>. All rights reserved.
+						Copyright © 2015 <a href="https://github.com/victorcamargo" target="_blank">Victor Camargo</a>. All rights reserved.
 						<a href="https://github.com/VictorCamargo/LocalTheme" target="_blank">GitHub</a> Project.<br>
-						LocalTheme - 2.2
+						LocalTheme - 3
 					</div>
 				</div>
 			</div>
@@ -102,5 +102,3 @@ $list = json_encode($list);
 	<!-- <script src="//192.168.25.160:35001/livereload.js"></script> -->
 </body>
 </html>
-<?php
-ob_end_flush();
