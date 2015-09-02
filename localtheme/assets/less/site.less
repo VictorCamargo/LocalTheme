@@ -1,0 +1,293 @@
+*{
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  overflow-y: scroll;
+  background-color: #272822;
+}
+
+.container{
+  max-width: 970px !important;
+}
+
+input,
+textarea,
+button,
+select{
+  outline: none;
+}
+
+// Corrigir bug do plugin de banco GAS
+object[type^='application/gas-events']{
+  display: none;
+}
+
+/*===========================================
+=            HELPERS / VARIABLES            =
+===========================================*/
+.no-select{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+}
+
+/*=================================
+=            MAIN LESS            =
+=================================*/
+header{
+  position: relative;
+  z-index: 5;
+  background-color: #1B1C16;
+  box-shadow: 0 0 7px #000;
+  .logo{
+    margin-top: 11px;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #FFF;
+    span{
+      font-size: 42px;
+      font-weight: bold;
+      color: #FAAB45;
+    }
+  }
+  .buttons{
+    float: right;
+    margin-top: 26px;
+    text-align: right;
+    color: #FAAB45;
+    span{
+      float: left;
+      margin-top: 11px;
+      font-size: 11px;
+    }
+    [type='button'],
+    a{
+      float: left;
+      height: 35px;
+      margin: 0 0 0 5px;
+      padding: 0 10px;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 33px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #333;
+      border: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-image: -webkit-gradient(linear, left 0%, left 100%, from(#999), to(#CCC));
+      background-image: -webkit-linear-gradient(top, #999, 0%, #CCC, 100%);
+      background-image:    -moz-linear-gradient(top, #999 0%, #CCC 100%);
+      background-image:         linear-gradient(to bottom, #999 0%, #CCC 100%);
+      background-repeat: repeat-x;
+
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff999999', endColorstr='#ffcccccc', GradientType=0);
+      &.active{
+        color: #FFF;
+        background: #FAAB45;
+      }
+    }
+  }
+}
+.content{
+  padding-top: 30px;
+}
+
+.list{
+  .clearfix;
+  margin-right: -.3%;
+  margin-left: -.3%;
+  padding-bottom: 20px;
+  a{
+    display: block;
+    float: left !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 32.9%;
+    margin: 0 .2% 3px;
+    padding: 7px 0;
+    font-size: 12px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    text-decoration: none;
+    text-indent: 10px;
+    text-transform: uppercase;
+    color: #8A8A8A;
+    border: 1px solid #414141;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #333;
+    &:hover,
+    &.active{
+      text-decoration: none;
+      color: #FFF;
+      border: 1px solid #004653;
+      background: #FAAB45;
+    }
+    p{
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      max-width: 200px;
+      max-height: 20px;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      text-indent: 0;
+      text-overflow: ellipsis;
+    }
+    span{
+      float: right !important;
+      padding-right: 10px;
+      font-size: 13px;
+      color: #FFF;
+    }
+  }
+}
+
+.line{
+  width: 100%;
+  border-top: 1px solid #333;
+}
+.development{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 0;
+  font-size: 12px;
+  text-align: center;
+  color: #CCC;
+  a{
+    color: #FAAB45;
+  }
+  span{
+    margin-left: 5px;
+    color: #045869;
+  }
+}
+.search{
+  margin-top: 0;
+  padding-left: 0;
+  color: #FFF;
+  p{
+    margin-top: 15px;
+    font-size: 18px;
+    span{
+      margin: 3px 0 0 0;
+      font-size: 13px;
+      font-weight: 600;
+      color: #FAAB45;
+    }
+  }
+  input{
+    .placeholder(#666);
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 22px;
+    font-weight: 100;
+    -webkit-transition: .2s;
+    transition: .2s;
+    text-transform: uppercase;
+    color: #666;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #FFF;
+  }
+}
+
+.info{
+  padding: 0;
+  li{
+    margin-top: 3px;
+    font-size: 13px;
+    list-style: none;
+    color: #FFF;
+    span{
+      margin: 3px 0 0 0;
+      font-size: 13px;
+      font-weight: 600;
+      color: #FAAB45;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .list{
+    a{
+      p{
+        max-width: 135px;
+      }
+    }
+  }
+}
+@media (max-width: 767px){
+  header{
+    .logo{
+      margin-top: 10px;
+      line-height: 25px;
+      text-align: center;
+    }
+    .buttons{
+      float: none;
+      text-align: center;
+      margin: 0 0 15px 0;
+      span{
+        margin-bottom: 5px;
+        float: none;
+        display: block;
+      }
+      a,
+      [type='button']{
+        float: none;
+        display: inline-block;
+      }
+    }
+  }
+  .content{
+    padding-top: 15px;
+  }
+  .search{
+    margin-bottom: 15px;
+  }
+  .list{
+    a{
+      width: 49.4%;
+    }
+  }
+}
+@media (max-width: 580px){
+  .list{
+    a{
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+      font-size: 16px;
+      p{
+        line-height: 17px;
+        max-height: auto;
+      }
+    }
+  }
+}
+@media (max-width: 360px){
+  .list{
+    a{
+      p{
+        max-width: 173px;
+      }
+    }
+  }
+}
