@@ -3,6 +3,8 @@ LocalTheme v3.0
 
 A beautiful and useful theme for localhost.
 
+Preview: http://victorcamargo.github.io/LocalTheme
+
 Instalation
 -----------
 
