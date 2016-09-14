@@ -1,7 +1,9 @@
 <?php
 $dir = 'localtheme/';
 
-$phpVersion = explode('.', PHP_VERSION);
+$phpVersion = PHP_VERSION;
+$mysqlVersion = explode(' ', mysql_get_client_info());
+$apacheVersion = (function_exists('apache_get_version')) ? apache_get_version() : 'Version not available';
 
 // Select folders and remove restricted files/folders
 $files = array_diff(glob( '*' ), array('.', '..', 'index.php', 'localtheme', 'README.md', 'robots.txt'));
@@ -11,7 +13,7 @@ foreach ($files as $key => $file) {
 	$list[] = array('file' => utf8_encode($file), 'date' => @date("d/m/Y", filemtime($file)), 'date_format' => @date("Y-m-d G:i:s", filemtime($file)) );
 }
 
-$list = json_encode($list);
+$list = (isset($list) ? json_encode($list) : json_encode(array()));
 ?>
 
 <html ng-app="ltApp">
@@ -47,9 +49,9 @@ $list = json_encode($list);
 				</div>
 				<div class="col-sm-3 hidden-xs">
 					<ul class="info">
-						<li>PHP: <span><?php echo $phpVersion[0] . '.' . $phpVersion[1]; ?></span></li>
-						<li>MySQL: <span><?php echo mysql_get_client_info(); ?></span></li>
-						<li>Apache: <span><?php echo apache_get_version(); ?></span></li>
+						<li>PHP: <span><?php echo $phpVersion; ?></span></li>
+						<li>MySQL: <span><?php echo $mysqlVersion[1]; ?></span></li>
+						<li>Apache: <span><?php echo $apacheVersion; ?></span></li>
 					</ul>
 				</div>
 				<div class="col-sm-5 col-md-6">
@@ -76,7 +78,7 @@ $list = json_encode($list);
 			<div class="row">
 				<div class="col-md-12">
 					<nav class="list">
-						<a ng-repeat="projeto in (filteredItems = (projetos | filter: search))" href="{{projeto.file}}" ng-class="($index == 0) ? 'active' : '' ; ">
+						<a ng-repeat="projeto in (filteredItems = (projetos | filter: search))" href="//{{projeto.file}}" ng-class="($index == 0) ? 'active' : '' ; ">
 							<p>{{projeto.file}}</p>
 							<span>{{projeto.date}}</span>
 						</a>
@@ -91,7 +93,7 @@ $list = json_encode($list);
 			</div>
 		</div>
 	</div>
-	
+
 	<script type="text/javascript">
 		var list = <?php echo $list; ?>;
 	</script>
@@ -99,6 +101,5 @@ $list = json_encode($list);
 	<script src="<?php echo $dir ?>assets/js/angular.min.js"></script>
 	<script src="<?php echo $dir ?>assets/js/modernizr-2.6.2-min.js"></script>
 	<script src="<?php echo $dir ?>assets/js/app.js"></script>
-	<!-- <script src="//192.168.25.160:35001/livereload.js"></script> -->
 </body>
 </html>

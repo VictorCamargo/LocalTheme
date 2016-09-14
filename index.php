@@ -1,1 +1,1 @@
-<?php include'localtheme/index.php'; ?>
+<?php include'localtheme/home.php'; ?>
