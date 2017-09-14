@@ -1,7 +1,11 @@
 LocalTheme v3.1
 ==============
 A beautiful and useful theme for localhost.
-Preview: http://victorcamargo.github.io/LocalTheme
+
+http://victorcamargo.github.io/LocalTheme
+
+
+![alt text](http://victorcamargo.github.io/preview.png)
 
 Instalation
 -----------
